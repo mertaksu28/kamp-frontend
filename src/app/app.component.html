@@ -1,13 +1,4 @@
-<!-- Welcome to {{title}}
-Hello {{user}}
 
-{{product1.productName}}
-
-<ul>
-  <li *ngFor="let product of products">{{product.productName}}</li>
-</ul>
- -->
-<!-- div bölüm demek -->
 <div class="container">
   <app-navi></app-navi>
   <div class="row">
@@ -15,9 +6,8 @@ Hello {{user}}
       <app-category></app-category>
     </div>
     <div class="col-md-9">
-      <app-product></app-product>
+      <router-outlet></router-outlet>
     </div>
   </div>
-
-  <router-outlet></router-outlet>
+  
 </div>
